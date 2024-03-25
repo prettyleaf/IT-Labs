@@ -1,0 +1,38 @@
+The system is: Windows - 6.1.7601 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/distrib/DiViLinePDS/modules/Microsoft Visual c++/2019/BuildTools/VC/Tools/MSVC/14.27.29110/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.27.29112 для x64
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.27.29112.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/distrib/DiViLinePDS/user/KGK/build-Debug/CMakeFiles/3.18.4/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/distrib/DiViLinePDS/user/KGK/build-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):jom /nologo cmTC_028ba\fast && jom: parallel job execution disabled for Makefile
+	D:\distrib\DiViLinePDS\modules\Qt\Tools\QtCreator\bin\jom.exe  -f CMakeFiles\cmTC_028ba.dir\build.make /nologo -L CMakeFiles\cmTC_028ba.dir\build
+Building CXX object CMakeFiles/cmTC_028ba.dir/CMakeCXXCompilerABI.cpp.obj
+	D:\distrib\DIVILI~2\modules\MICROS~1\2019\BUILDT~1\VC\Tools\MSVC\1427~1.291\bin\Hostx64\x64\cl.exe @C:\Users\student\AppData\Local\Temp\CMakeCXXCompilerABI.cpp.obj.5304.0.jom
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_028ba.exe
+	D:\distrib\DiViLinePDS\modules\cmake\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_028ba.dir --rc=D:\distrib\DiViLinePDS\modules\WindowsKit\10\bin\10.0.18362.0\x64\rc.exe --mt=D:\distrib\DiViLinePDS\modules\WindowsKit\10\bin\10.0.18362.0\x64\mt.exe --manifests -- D:\distrib\DIVILI~2\modules\MICROS~1\2019\BUILDT~1\VC\Tools\MSVC\1427~1.291\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_028ba.dir\objects1.rsp @C:\Users\student\AppData\Local\Temp\cmTC_028ba.exe.5304.405.jom
+
+
+

@@ -1,0 +1,89 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "NMake Makefiles JOM"
+		},
+		"paths" : 
+		{
+			"cmake" : "D:/distrib/DiViLinePDS/modules/cmake/bin/cmake.exe",
+			"cpack" : "D:/distrib/DiViLinePDS/modules/cmake/bin/cpack.exe",
+			"ctest" : "D:/distrib/DiViLinePDS/modules/cmake/bin/ctest.exe",
+			"root" : "D:/distrib/DiViLinePDS/modules/cmake/share/cmake-3.18"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 18,
+			"patch" : 4,
+			"string" : "3.18.4",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-719e8be8a1289bfbb98d.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 1
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-ec344be1dd20657c4b89.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-a3832699ed46f285546b.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-ec344be1dd20657c4b89.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-a3832699ed46f285546b.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-719e8be8a1289bfbb98d.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 1
+			}
+		}
+	}
+}
