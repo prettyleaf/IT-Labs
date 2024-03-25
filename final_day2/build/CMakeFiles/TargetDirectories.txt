@@ -1,0 +1,3 @@
+C:/Users/Server.sosu/Desktop/KGK/build/CMakeFiles/KGK.dir
+C:/Users/Server.sosu/Desktop/KGK/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Server.sosu/Desktop/KGK/build/CMakeFiles/ZERO_CHECK.dir

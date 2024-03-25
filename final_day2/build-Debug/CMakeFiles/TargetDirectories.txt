@@ -1,0 +1,3 @@
+D:/distrib/DiViLinePDS/user/KGK/build-Debug/CMakeFiles/KGK.dir
+D:/distrib/DiViLinePDS/user/KGK/build-Debug/CMakeFiles/edit_cache.dir
+D:/distrib/DiViLinePDS/user/KGK/build-Debug/CMakeFiles/rebuild_cache.dir
