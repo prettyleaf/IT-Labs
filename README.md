@@ -1,5 +1,5 @@
 # IT-Labs is a repo with solutions we work on classes.
-## Main working group:
+### Main working group:
 - Vadim ["doritorainn"](https://github.com/doritorainn) Grinko
 - Ivan ["Rockstar234"](https://github.com/Rockstar234) Kolesnikov
 - Pavel ["Axiide13"](https://github.com/axiide13) Kydruavtcev
