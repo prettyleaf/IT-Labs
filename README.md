@@ -12,4 +12,4 @@
 - VSCode
 - VS2022
 - Qt
-Thats why code may not work on release LOL (because everyone uses different IDEs)
+> Thats why code may not work on release LOL (because everyone uses different IDEs)
