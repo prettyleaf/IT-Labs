@@ -7,3 +7,4 @@
 ### Other groups we coop with:
 - Eduard ["itreedwed"](https://github.com/ireedwed) Menukhov
 - Vadim ["omigros"](https://github.com/omigros) Abdullaev
+.
