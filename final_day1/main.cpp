@@ -1,22 +1,14 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <random>
+#include <vector>
+#include <windows.h>
 
 using namespace std;
 
 void task1() {
-    int size = 8;
-    int* arr = new int[size];
-    srand(time(NULL));
-    for (int i = 0; i < size; ++i) {
-        arr[i] = rand() % 100;
-    }
-    cout << "Array of random elements:" << endl;
-    for (int i = 0; i < size; ++i) {
-        cout << arr[i] << endl;
-    }
-    delete[] arr;
-}
+}    
     int sum_array(int* arr, int size) {
         int sum = 0;
         for (int i = 0; i < size; ++i) {
@@ -38,8 +30,9 @@ void task1() {
 
 
 
-
 int main() {
+    SetConsoleCP(1251); // ru localization 
+    SetConsoleOutputCP(1251); // ru localization 
     func1();
     return 0;
 }
