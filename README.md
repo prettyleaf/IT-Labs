@@ -1,4 +1,4 @@
-# IT-Labs is a repo with solutions we work on classes.
+# IT-Labs is a repo with solutions we work on classes. бля
 ### Main working group:
 - Vadim ["doritorainn"](https://github.com/doritorainn) Grinko
 - Ivan ["Rockstar234"](https://github.com/Rockstar234) Kolesnikov
