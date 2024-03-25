@@ -1,0 +1,7 @@
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/doritorainn.dir
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/install.dir
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/install/local.dir
+/home/dorito/Documents/GitHub/IT-Labs/lab #2/build-doritorainn-Desktop-Debug/CMakeFiles/install/strip.dir
