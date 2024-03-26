@@ -9,7 +9,7 @@
 - Vadim ["omigros"](https://github.com/omigros) Abdullaev
 
 ### Software used:
-- VSCode
+- ~~VSCode~~
 > 👆 this shit is the most annoying way of debugging cpp files holy fuck
 - VS2022
 - Qt
