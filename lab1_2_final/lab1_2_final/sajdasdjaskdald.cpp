@@ -1,9 +1,10 @@
 ﻿#include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cstring>
 #include <random>
 #include <vector>
-#include <windows.h>
+//#include <windows.h>
 #include <algorithm>
 
 using namespace std;
@@ -279,24 +280,23 @@ void Task07()
     int index_to_remove = find(arr.begin(), arr.end(), value_to_remove) - arr.begin();
     if (index_to_remove != arr.size()) {
         arr.erase(arr.begin() + index_to_remove);
-        cout << "New array size: " << arr.size() << endl;
-        cout << "Number of removed elements: " << 1 << endl;
+        cout << "Новый размер массива: " << arr.size() << endl;
     }
     else {
-        cout << "Value not found in the array." << endl;
+        cout << "Данное значение не найдено в массиве." << endl;
     }
 
 }
 
 void Task08()
 {
-    int size = 8;
+    int size = 100;
     int* arr = new int[size];
     srand(time(NULL));
     for (int i = 0; i < size; ++i) {
         arr[i] = rand() % 100;
     }
-    cout << "Array of random elements:" << endl;
+    cout << "Массив случайных элементов: " << endl;
     for (int i = 0; i < size; ++i) {
         cout << arr[i] << endl;
     }
@@ -356,19 +356,19 @@ void Task12()
     int* evenArr = getsNumber(arr, size, newSize);
 
     for (int i = 0; i < newSize; i++) {
-        std::cout << evenArr[i] << " "; // Выводим четные числа из нового массива
+        cout << evenArr[i] << " "; // Выводим четные числа из нового массива
     }
 
     delete[] evenArr; // Освобождаем память, выделенную для нового массива
 }
 
 bool areStringsIdentical(const char* str1, const char* str2) {
-    return std::strcmp(str1, str2) == 0;
+    return strcmp(str1, str2) == 0;
 }
 
 void Task13()
 {
     const char* str1 = "Hello";
     const char* str2 = "Hello";
-    std::cout << "Текста индентичны? " << std::boolalpha << areStringsIdentical(str1, str2) << std::endl;
+    cout << "Текста индентичны? " << boolalpha << areStringsIdentical(str1, str2) << endl;
 }
