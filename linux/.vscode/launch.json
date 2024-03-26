@@ -7,7 +7,7 @@
 "configurations": [
     {
         "name": "(gdb) Launch",
-        "type": "lldb",
+        "type": "cppdbg",
         "request": "launch",
         "program": "${fileDirname}/${fileBasenameNoExtension}.out",
         "args": [],
@@ -44,7 +44,7 @@
             }
         ],
         "preLaunchTask": "g++ build active file",
-        "miDebuggerPath": "/usr/bin/gdb"
+       // "miDebuggerPath": "/usr/bin/gdb"
     }
 ]
 
