@@ -38,9 +38,9 @@ int main() {
     int NumberTask;
     cout << "Введите номер задания(1-13)";
     cin >> NumberTask;
-    if (NumberTask == 0)
+    if (NumberTask == 0) // переписать через case // может понадобиться перевод вводимых чисел в int
     {
-        exit;
+        exit; // не нужен 
     }
     else if (NumberTask == 1)
     {
@@ -96,8 +96,8 @@ int main() {
     }
     else
     {
-        cout << "Что-то на сложном..." << endl;
-        exit;
+        cout << "Not listed" << endl;
+        exit; // может не понадобиться 
     }
 
     return 0;
@@ -192,6 +192,7 @@ void Task03()
         else (max = mas[i]);
     }
     cout << "Минимальное: " << min << "\nМаксимальное: " << max << endl;
+    delete[] mas
 }
 
 void Task04()
@@ -212,11 +213,10 @@ void Task04()
             int finish = 1;
         }
     }
-    if (finish = 0) {
+    if (finish == 0) {
         cout << " Число " << Number << " не присутствует в массиве" << endl;
     }
-
-    delete[] mas;
+    delete[] mas; // may be used wrong
 }
 
 void Task05()
@@ -277,7 +277,7 @@ void Task07()
 {
     vector<int> arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     int value_to_remove = 5;
-    int index_to_remove = find(arr.begin(), arr.end(), value_to_remove) - arr.begin();
+    int index_to_remove = find(arr.begin(), arr.end(), value_to_remove) // - arr.begin(); // for what?
     if (index_to_remove != arr.size()) {
         arr.erase(arr.begin() + index_to_remove);
         cout << "Новый размер массива: " << arr.size() << endl;
@@ -305,7 +305,8 @@ void Task08()
 
 void Task09()
 {
-    int array[] = { 1, 2, 3, 4, 5 }; // Исходный массив
+    int const size = 10;
+    int* array = new int[size]; // Исходный массив
     int arraySize = sizeof(array) / sizeof(array[0]); // Вычисляем размер массива
 
     int arraySum = sumArray(array, arraySize); // Вызываем sumArray для вычисления суммы
