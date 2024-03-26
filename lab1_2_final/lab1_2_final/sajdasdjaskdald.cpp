@@ -4,7 +4,6 @@
 #include <cstring>
 #include <random>
 #include <vector>
-//#include <windows.h>
 #include <algorithm>
 
 using namespace std;
