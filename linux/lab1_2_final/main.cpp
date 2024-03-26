@@ -39,7 +39,7 @@ int main() {
     cin >> NumberTask;
     if (NumberTask == 0) // переписать через case // может понадобиться перевод вводимых чисел в int
     {
-        exit; // не нужен
+        exit; // не нужен 
     }
     else if (NumberTask == 1)
     {
@@ -96,7 +96,7 @@ int main() {
     else
     {
         cout << "Not listed" << endl;
-        exit; // может не понадобиться
+        exit; // может не понадобиться 
     }
 
     return 0;
@@ -191,7 +191,7 @@ void Task03()
         else (max = mas[i]);
     }
     cout << "Минимальное: " << min << "\nМаксимальное: " << max << endl;
-    delete[] mas
+    delete[] mas;
 }
 
 void Task04()
@@ -276,12 +276,11 @@ void Task07()
 {
     vector<int> arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     int value_to_remove = 5;
-    int index_to_remove = find(arr.begin(), arr.end(), value_to_remove) // - arr.begin(); // for what?
-        if (index_to_remove != arr.size()) {
+    int index_to_remove = find(arr.begin(), arr.end(), value_to_remove) - arr.begin(); // for what?
+    if (index_to_remove != arr.size()) {
         arr.erase(arr.begin() + index_to_remove);
         cout << "Новый размер массива: " << arr.size() << endl;
-    }
-    else {
+    } else {
         cout << "Данное значение не найдено в массиве." << endl;
     }
 
