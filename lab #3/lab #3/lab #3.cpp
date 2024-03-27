@@ -40,13 +40,13 @@ void Task01()
 	{
 		vector<int> R;
 		int amount;
-		cout << "Кол-во сопротивлений? :";
+		cout << "Кол-во сопротивлений? : ";
 		cin >> amount;
 		for (int i = 1; i<=amount; i++){
 			cout << "Введите " << i << "-ое сопротивление: ";
 			cin >> R.emplace_back();
 		}
-		int R_;
+		int R_ = 0;
 		for (int i = 0; i<amount; i++){
 			R_ = R_ + R[i];
 		}
