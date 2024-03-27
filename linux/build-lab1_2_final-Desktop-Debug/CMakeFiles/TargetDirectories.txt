@@ -1,7 +1,0 @@
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/lab1_2_final.dir
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/list_install_components.dir
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/install.dir
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/install/local.dir
-/home/dorito/Documents/GitHub/IT-Labs/linux/build-lab1_2_final-Desktop-Debug/CMakeFiles/install/strip.dir
