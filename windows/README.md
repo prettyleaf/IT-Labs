@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="70%" height="70%" src="https://download.logo.wine/logo/Microsoft_Windows/Microsoft_Windows-Logo.wine.png">
+  <img width="70%" height="70%" src="https://uwu.so/acdm8HMmvDE">
 </p>
 
 <p align="center">
