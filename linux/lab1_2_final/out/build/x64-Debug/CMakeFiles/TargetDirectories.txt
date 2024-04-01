@@ -1,6 +1,0 @@
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/linux/lab1_2_final/out/build/x64-Debug/CMakeFiles/lab1_2_final.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/linux/lab1_2_final/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/linux/lab1_2_final/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/linux/lab1_2_final/out/build/x64-Debug/CMakeFiles/list_install_components.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/linux/lab1_2_final/out/build/x64-Debug/CMakeFiles/install.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/linux/lab1_2_final/out/build/x64-Debug/CMakeFiles/install/local.dir

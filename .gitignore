@@ -410,3 +410,4 @@ FodyWeavers.xsd
 # Built Visual Studio Code Extensions
 *.vsix
 /linux/lab1_2_final/.vscode
+/linux/lab1_2_final/out
