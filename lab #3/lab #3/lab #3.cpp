@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cmath>
 #include <cstring>
 #include <random>
 #include <vector>
@@ -54,11 +55,22 @@ void Task01()
 	}
 void Task02()
 	{
-		int a = 2;
-		cout << a << endl;
+		int a, square, volume;
+		cout << "Длина ребра куба? : ";
+		cin >> a;
+		square = pow(a, 2);
+		volume = pow(a, 3);
+		cout << "Площадь: " << square << ", Объём:  " << volume << endl;
 	}
 void Task03()
 	{
-		int a = 3;
-		cout << a << endl;
+		vector<int> a;
+		int p,S;
+		for (int i = 1; i<=3; i++){
+			cout << "Введите " << i << "-ую сторону: ";
+			cin >> a.emplace_back();
+		}
+		p = (a[0]+a[1]+a[2])/2;
+		S = sqrt(p*(p-a[0])*(p-a[1])*(p-a[2]));
+		cout << "Площадь по формуле Герона: " << S << endl;
 	}
