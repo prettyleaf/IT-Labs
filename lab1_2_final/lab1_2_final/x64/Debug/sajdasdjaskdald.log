@@ -1,8 +1,0 @@
-﻿  sajdasdjaskdald.cpp
-C:\Users\Эдуард\source\repos\sajdasdjaskdald\sajdasdjaskdald\sajdasdjaskdald.cpp(35,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Эдуард\source\repos\sajdasdjaskdald\sajdasdjaskdald\sajdasdjaskdald.cpp(42,9): warning C4551: в вызове функции отсутствует список аргументов
-C:\Users\Эдуард\source\repos\sajdasdjaskdald\sajdasdjaskdald\sajdasdjaskdald.cpp(99,9): warning C4551: в вызове функции отсутствует список аргументов
-C:\Users\Эдуард\source\repos\sajdasdjaskdald\sajdasdjaskdald\sajdasdjaskdald.cpp(248,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Эдуард\source\repos\sajdasdjaskdald\sajdasdjaskdald\sajdasdjaskdald.cpp(279,25): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
-C:\Users\Эдуард\source\repos\sajdasdjaskdald\sajdasdjaskdald\sajdasdjaskdald.cpp(295,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  sajdasdjaskdald.vcxproj -> C:\Users\Эдуард\source\repos\sajdasdjaskdald\x64\Debug\sajdasdjaskdald.exe

@@ -9,8 +9,8 @@
 - Vadim ["omigros"](https://github.com/omigros) Abdullaev
 
 ### Software used:
-- ~~VSCode~~
-> 👆 this shit is the most annoying way of debugging cpp files holy fuck
-- VS2022
-- Qt
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/ru/vs/community/)
+- [Qt](https://www.qt.io/download-qt-installer-oss)
 > Thats why code may not work on release LOL (because everyone uses different IDEs)
+> VS Code is the most annoying shit for debugging cpp files holy fuck
