@@ -1,12 +1,5 @@
 ﻿
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <cmath>
-#include <cstring>
-#include <random>
-#include <vector>
-#include <algorithm>
+
 #include "lab #3.h"
 
 using namespace std;
