@@ -15,7 +15,7 @@ int main()
 	srand(time(NULL));
 	
 	char TaskNumber;
-	cout << "Введите номер задания(1-6)";
+	cout << "Введите номер задания(1-6): ";
 	cin >> TaskNumber;
 	switch (TaskNumber) {
 	case '1': Task01(); break;
