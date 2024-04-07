@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/dorito/Documents/GitHub/IT-Labs/lab #3/lab #3
+# Install script for directory: C:/Users/Server.sosu/Documents/GitHub/IT-Labs/lab #3/lab #3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/dorito/Documents/GitHub/IT-Labs/lab #3/out/install/x64-debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Server.sosu/Documents/GitHub/IT-Labs/lab #3/out/install/x64-debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
