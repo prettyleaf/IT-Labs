@@ -21,9 +21,9 @@ int main()
 	case '1': Task01(); break;
 	case '2': Task02(); break;
 	case '3': Task03(); break;
-	case '4': Task04();
-	case '5': Task05();
-	case '6': Task06();
+	case '4': Task04(); break;
+	case '5': Task05(); break;
+	case '6': Task06(); break;
 	}
 	
 	return 0;
