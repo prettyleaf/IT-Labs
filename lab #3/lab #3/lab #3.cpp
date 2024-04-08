@@ -72,11 +72,9 @@ void Task04()
 		num1 = rand() % 4;
 		num2 = rand() % 4;
 		num3 = rand() % 4;
-*/
-		srand(time(NULL));
-		for (int num = 0; num < 3; num++) {
+*/		for (int num = 0; num < 3; num++) {
 			// 10 случайных чисел в диапазоне от 0 до 20000 и делим их на 10000, чтобы получить значения в интервале
-			double result = (1.0 + (rand() % 20001)) / 10000;
+			double result = (1.0 + (rand() % 100001)) / 10000;
 			cout << result << "- Взятое число\n";
 			if (result > 1 && result < 3) {
 				cout << "Число - " << result << " - included!\n";
