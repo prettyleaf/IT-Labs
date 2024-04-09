@@ -1,3 +1,0 @@
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/windows/lab4/out/build/x64-Debug/CMakeFiles/lab4.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/windows/lab4/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Server.sosu/Documents/GitHub/IT-Labs/windows/lab4/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
