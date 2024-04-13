@@ -2,18 +2,24 @@
 
 using namespace std;
 
-void Task01();
+void Task01(); // lab 1 (3)
 void Task02();
 void Task03();
 void Task04();
 void Task05();
 void Task06();
-void Task07();
+void Task07(); // lab 2 (4)
 void Task08();
 void Task09();
 void Task10();
 void Task11();
 void Task12();
+void Task13(); // lab 3 (5)
+//void Task14();
+/*void Task15();
+void Task16();
+void Task17();
+void Task18();*/
 
 int main()
 {
@@ -21,7 +27,8 @@ int main()
 	srand(time(NULL));
 
 	int TaskNumber;
-	cout << "Введите номер задания(1-12): ";
+	cout << "Задания 1-6 - лаб. работа 1.\n 7-12 - работа 2.\n 13-18 работа 3.\n";
+	cout << "Введите номер задания(1-18): ";
 	cin >> TaskNumber;
 	switch (TaskNumber) {
 	case 1: Task01(); break; // lab 1 (3)
@@ -36,6 +43,12 @@ int main()
 	case 10: Task10(); break;
 	case 11: Task11(); break;
 	case 12: Task12(); break;
+	case 13: Task13(); break; // lab 3 (5)
+	//case 14: Task14(); break;
+	/*case 15: Task15(); break;
+	case 16: Task16(); break;
+	case 17: Task17(); break;
+	case 18: Task18(); break;*/
 	}
 
 	return 0;
@@ -270,4 +283,12 @@ void Task12() {
 	else {
 		cout << "NO" << endl;
 	}*/
+}
+void Task13() {
+	for (int i = 0; i < 100; ++i) {
+		int last_digit = i % 10;
+		if (last_digit != 5 && last_digit != 8) {
+			cout << i << endl;
+		}
+	}
 }
