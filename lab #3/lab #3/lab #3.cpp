@@ -20,20 +20,20 @@ int main()
 	setlocale(LC_ALL, "ru");
 	srand(time(NULL));
 
-	char TaskNumber;
+	int TaskNumber;
 	cout << "Введите номер задания(1-12): ";
 	cin >> TaskNumber;
 	switch (TaskNumber) {
-	case '1': Task01(); break;
-	case '2': Task02(); break;
-	case '3': Task03(); break;
-	case '4': Task04(); break;
-	case '5': Task05(); break;
-	case '6': Task06(); break;
-	case '7': Task07(); break;
-	case '8': Task08(); break;
-	case '9': Task09(); break;
-	case '10': Task10(); break;
+	case 1: Task01(); break;
+	case 2: Task02(); break;
+	case 3: Task03(); break;
+	case 4: Task04(); break;
+	case 5: Task05(); break;
+	case 6: Task06(); break;
+	case 7: Task07(); break;
+	case 8: Task08(); break;
+	case 9: Task09(); break;
+	case 10: Task10(); break;
 		//case '11': Task11(); break;
 		//case '12': Task12(); break;
 	}
