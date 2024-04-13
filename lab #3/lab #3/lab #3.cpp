@@ -245,11 +245,29 @@ void Task12() {
 		Task12();
 	}
 
-	// lenght || width check
+	int lenght_cut = lenght / 2;
+	int width_cut = width / 2;
+
+	if ((lenght_cut - amount) >= 1) {
+		cout << "Lenght - YES" << endl;
+	}
+	else {
+		cout << "Lenght - NO" << endl;
+	}
+	
+	if ((width_cut - amount) >= 1) {
+		cout << "Width - YES" << endl;
+	}
+	else {
+		cout << "Width - NO" << endl;
+	}
+
+
+	/*// lenght || width check
 	if (lenght % amount == 0 || width % amount == 0) {
 		cout << "YES" << endl;
 	}
 	else {
 		cout << "NO" << endl;
-	}
+	}*/
 }
