@@ -12,8 +12,8 @@ void Task07();
 void Task08();
 void Task09();
 void Task10();
-//void Task11();
-//void Task12();
+void Task11();
+void Task12();
 
 int main()
 {
@@ -24,18 +24,18 @@ int main()
 	cout << "Введите номер задания(1-12): ";
 	cin >> TaskNumber;
 	switch (TaskNumber) {
-	case 1: Task01(); break;
+	case 1: Task01(); break; // lab 1 (3)
 	case 2: Task02(); break;
 	case 3: Task03(); break;
 	case 4: Task04(); break;
 	case 5: Task05(); break;
 	case 6: Task06(); break;
-	case 7: Task07(); break;
+	case 7: Task07(); break; // lab 2 (4)
 	case 8: Task08(); break;
 	case 9: Task09(); break;
 	case 10: Task10(); break;
-		//case '11': Task11(); break;
-		//case '12': Task12(); break;
+	case 11: Task11(); break;
+	case 12: Task12(); break;
 	}
 
 	return 0;
@@ -207,5 +207,49 @@ void Task10() {
 	}
 	else {
 		cout << year << " год НЕ является високосным. В этом году 365 дней.\n" << endl;
+	}
+}
+void Task11() { /* http://chessknigi.ru/chess-article/kak-hodit-ladja.html */
+	int x1, y1;
+	cout << "Введите координаты первой клетки (X,Y): \n";
+	cin >> x1 >> y1;
+	// проверка, в пределах ли доски
+	if (x1 < 1 || x1 > 8 || y1 < 1 || y1 > 8) {
+		cout << "Клетка вне предела доски!\n";
+		exit(0);
+	}
+	int x2, y2;
+	cout << "Введите координаты второй клетки (X,Y): \n";
+	cin >> x2 >> y2;
+	// проверка, в пределах ли доски
+	if (x2 < 1 || x2 > 8 || y2 < 1 || y2 > 8) {
+		cout << "Клетка вне предела доски!\n";
+		exit(0);
+	}
+
+	// передвижение возможно, при условии, что x || y = const, иначе движение идет под углом, что невозможно
+	if (y1 == y2 || x1 == x2) {
+		cout << "YES" << endl;
+	}
+	else {
+		cout << "NO" << endl;
+	}
+}
+void Task12() {
+	int lenght, width, amount;
+	cout << "Введите длину, ширину и количество долек: \n";
+	cin >> lenght >> width >> amount;
+
+	if (lenght <= 0 || width <= 0 || amount <= 0) {
+		cout << "Таких шоколадок не бывает, увы.\n";
+		Task12();
+	}
+
+	// lenght || width check
+	if (lenght % amount == 0 || width % amount == 0) {
+		cout << "YES" << endl;
+	}
+	else {
+		cout << "NO" << endl;
 	}
 }
