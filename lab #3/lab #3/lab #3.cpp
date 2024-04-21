@@ -249,23 +249,23 @@ void Task11() { /* http://chessknigi.ru/chess-article/kak-hodit-ladja.html */
 	}
 }
 void Task12() {
-	int lenght, width, amount;
+	int length, width, amount;
 	cout << "Введите длину, ширину и количество долек: \n";
-	cin >> lenght >> width >> amount;
+	cin >> length >> width >> amount;
 
-	if (lenght <= 0 || width <= 0 || amount <= 0) {
+	if (length <= 0 || width <= 0 || amount <= 0) {
 		cout << "Таких шоколадок не бывает, увы.\n";
 		Task12();
 	}
 
-	int lenght_cut = lenght / 2;
+	int length_cut = length / 2;
 	int width_cut = width / 2;
 
-	if ((lenght_cut - amount) >= 1) {
-		cout << "Lenght - YES" << endl;
+	if ((length_cut - amount) >= 1) {
+		cout << "Length - YES" << endl;
 	}
 	else {
-		cout << "Lenght - NO" << endl;
+		cout << "Length - NO" << endl;
 	}
 	
 	if ((width_cut - amount) >= 1) {
@@ -276,8 +276,8 @@ void Task12() {
 	}
 
 
-	/*// lenght || width check
-	if (lenght % amount == 0 || width % amount == 0) {
+	/*// length || width check
+	if (length % amount == 0 || width % amount == 0) {
 		cout << "YES" << endl;
 	}
 	else {
