@@ -149,13 +149,13 @@ void Task06()
 void Task07()
 {
 	int a, b, n;
-	cout << "Введите кол-во рублей (A): \n";
+	cout << "Введите стоимость пирожка в рублях (A): \n";
 	cin >> a;
-	cout << "Введите кол-во копеек (B): \n";
+	cout << "Введите стоимость пирожка в копейках (B): \n";
 	cin >> b;
 	cout << "Введите кол-во пирожков (N): \n";
 	cin >> n;
-	if (a < 1 || b < 1 || n < 1) {
+	if (a < 0 || b < 0 || n < 0) {
 		cout << "Используйте только положительные числа!\n";
 		exit(0);
 	}
@@ -164,7 +164,7 @@ void Task07()
 	int rubles = total_amount / 100;
 	int cents = total_amount % 100;
 
-	cout << "Стоимость покупки: " << rubles << " рублей и " << cents << " копеек";
+	cout << "Стоимость покупки: " << rubles << " рублей и " << cents << " копеек"<< endl;
 }
 void Task08()
 {
@@ -291,4 +291,7 @@ void Task13() {
 			cout << i << endl;
 		}
 	}
+}
+void Task14() {
+	int number;
 }
