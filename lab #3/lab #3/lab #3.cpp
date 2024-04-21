@@ -16,8 +16,8 @@ void Task11();
 void Task12();
 void Task13(); // lab 3 (5)
 void Task14();
-/*void Task15();
-void Task16();
+void Task15();
+/*void Task16();
 void Task17();
 void Task18();*/
 
@@ -45,8 +45,8 @@ int main()
 	case 12: Task12(); break;
 	case 13: Task13(); break; // lab 3 (5)
 	case 14: Task14(); break;
-	/*case 15: Task15(); break;
-	case 16: Task16(); break;
+	case 15: Task15(); break;
+	/*case 16: Task16(); break;
 	case 17: Task17(); break;
 	case 18: Task18(); break;*/
 	}
@@ -211,7 +211,7 @@ void Task10() {
 	if (year % 4 == 0 && year % 100 != 0) {
 		LeapYear = true;
 	}
-	else if (year % 400 == 0) {
+	else {
 		LeapYear = false;
 	}
 
@@ -312,3 +312,21 @@ double operation(int N) {
 		}
 	}
 	}
+
+void Task15() {
+	int size, num;
+	string values;
+	cin >> size >> values;
+	vector<int> array(size);
+	stringstream ss(values);
+	while ( ss >> num ) { 
+    	array.push_back(num);
+    }   
+	for (auto n : array) {
+        cout << n << " ";
+    }  
+
+	
+	
+
+}
