@@ -113,7 +113,7 @@ void Task05()
 	cin >> y;
 	if (x == y) {
 		cout << "Используйте не одинаковые числа!\n";
-		exit(0);
+		Task05();
 	}
 	double min, max;
 	if (x < y) {
@@ -157,7 +157,7 @@ void Task07()
 	cin >> n;
 	if (a < 0 || b < 0 || n < 0) {
 		cout << "Используйте только положительные числа!\n";
-		exit(0);
+		Task07();
 	}
 
 	int total_amount = (a * 100 + b) * n;
@@ -186,14 +186,14 @@ void Task09()
 	// rule check for entered velocity
 	if (velocity < -1000 || velocity > 1000) {
 		cout << "Пожалуйста, придерживайтесь условия задачи: -1000 <= V <= 1000 !!!\n";
-		exit(0);
+		Task09();
 	}
 	cout << "Введите время T: \n";
 	cin >> time;
 	// rule check for entered time
 	if (time > 1000 || time < 0) {
 		cout << "Пожалуйста, придерживайтесь условия задачи: 0 <= T <= 1000 !!!\n";
-		exit(0);
+		Task09();
 	}
 	int distance = velocity * time;
 	int result = distance % 109;
@@ -229,7 +229,7 @@ void Task11() { /* http://chessknigi.ru/chess-article/kak-hodit-ladja.html */
 	// проверка, в пределах ли доски
 	if (x1 < 1 || x1 > 8 || y1 < 1 || y1 > 8) {
 		cout << "Клетка вне предела доски!\n";
-		exit(0);
+		Task11();
 	}
 	int x2, y2;
 	cout << "Введите координаты второй клетки (X,Y): \n";
@@ -237,7 +237,7 @@ void Task11() { /* http://chessknigi.ru/chess-article/kak-hodit-ladja.html */
 	// проверка, в пределах ли доски
 	if (x2 < 1 || x2 > 8 || y2 < 1 || y2 > 8) {
 		cout << "Клетка вне предела доски!\n";
-		exit(0);
+		Task11();
 	}
 
 	// передвижение возможно, при условии, что x || y = const, иначе движение идет под углом, что невозможно
