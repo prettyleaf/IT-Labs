@@ -8,8 +8,6 @@
 
 using namespace std;
 
-
-
 void Task01();
 void Task02();
 void Task03();
