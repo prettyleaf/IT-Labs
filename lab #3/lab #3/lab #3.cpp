@@ -18,8 +18,8 @@ void Task13(); // lab 3 (5)
 void Task14();
 void Task15();
 void Task16();
-/*id Task17();
-void Task18();*/
+void Task17();
+void Task18();
 
 int main()
 {
@@ -47,8 +47,8 @@ int main()
 	case 14: Task14(); break;
 	case 15: Task15(); break;
 	case 16: Task16(); break;
-	/*case 17: Task17(); break;
-	case 18: Task18(); break;*/
+	case 17: Task17(); break;
+	case 18: Task18(); break;
 	}
 
 	return 0;
@@ -343,4 +343,12 @@ void Task16(){
 	if (is_sorted(array.begin(), array.end()) == true){
 		cout << "По возрастанию" << endl;
 	} else cout << "Не по возрастанию" << endl;
+}
+
+void Task17(){
+
+}
+
+void Task18(){
+
 }
