@@ -356,8 +356,8 @@ void Task17(){
 	while ( ss >> num )
   	array.push_back( num );
 	for (auto n : array) {
-	if (array[n] > 0 && array[n] > *min_element(array.begin(), array.end())){ // max_element предоставлен библиотекой STL
-	min = *min_element(array.begin(), array.end());
+	if (array[n] > 0){ 
+	
 	}
 	cout << min << endl;
 }
