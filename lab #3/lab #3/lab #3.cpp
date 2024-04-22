@@ -316,14 +316,16 @@ double operation(int N) {
 void Task15() {
 	int size, num;
 	string values;
-	// cin >> size;
+	// cin >> size; // нужен ли размер массива если мы используем вектор??
 	cin >> values;
 	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
 	stringstream ss(values); 
-	vector<int> array;
+	vector<int> array/*(size)*/;
 	while ( ss >> num )
   	array.push_back( num );
 	for (auto n : array) {
+		if (n%2==0){
         cout << n << " ";
     }
+	}
 }
