@@ -346,7 +346,7 @@ void Task16(){
 }
 
 void Task17(){
-	int size, num;
+	int size, num, min;
 	string values;
 	// cin >> size; // нужен ли размер массива если мы используем вектор??
 	cin >> values;
@@ -355,6 +355,11 @@ void Task17(){
 	vector<int> array/*(size)*/;
 	while ( ss >> num )
   	array.push_back( num );
+	for (auto n : array) {
+	if (array[n] > 0 && array[n] < *min_element(array.begin(), array.end())){ // max_element предоставлен библиотекой STL
+	min = array[n];
+	}
+}
 }
 
 void Task18() {
