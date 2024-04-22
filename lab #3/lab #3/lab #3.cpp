@@ -17,8 +17,8 @@ void Task12();
 void Task13(); // lab 3 (5)
 void Task14();
 void Task15();
-/*void Task16();
-void Task17();
+void Task16();
+/*id Task17();
 void Task18();*/
 
 int main()
@@ -46,8 +46,8 @@ int main()
 	case 13: Task13(); break; // lab 3 (5)
 	case 14: Task14(); break;
 	case 15: Task15(); break;
-	/*case 16: Task16(); break;
-	case 17: Task17(); break;
+	case 16: Task16(); break;
+	/*case 17: Task17(); break;
 	case 18: Task18(); break;*/
 	}
 
@@ -328,4 +328,19 @@ void Task15() {
         cout << n << " ";
     }
 	}
+}
+
+void Task16(){
+	int size, num;
+	string values;
+	// cin >> size; // нужен ли размер массива если мы используем вектор??
+	cin >> values;
+	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
+	stringstream ss(values); 
+	vector<int> array/*(size)*/;
+	while ( ss >> num )
+  	array.push_back( num );
+	if (is_sorted(array.begin(), array.end()) == true){
+		cout << "По возрастанию" << endl;
+	} else cout << "Не по возрастанию" << endl;
 }
