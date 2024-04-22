@@ -357,14 +357,25 @@ void Task17(){
   	array.push_back( num );
 }
 
-void Task18(){
+void Task18() {
 	int size, num;
+	
 	string values;
 	// cin >> size; // нужен ли размер массива если мы используем вектор??
 	cin >> values;
 	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
-	stringstream ss(values); 
+	stringstream ss(values);
 	vector<int> array/*(size)*/;
-	while ( ss >> num )
-  	array.push_back( num );
+	while (ss >> num)
+		array.push_back(num);
+	for (int i = 0; i < size - 1; i++)
+		for (int j = 0; j < size - 1; j++)
+			if (a[j] > 0)
+				if (a[j + 1] < 0)
+				{
+					int temp;
+					temp = a[j];
+					a[j] = a[j + 1];
+					a[j + 1] = temp;
+				}
 }
