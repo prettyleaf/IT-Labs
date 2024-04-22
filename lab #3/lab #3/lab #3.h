@@ -12,6 +12,7 @@
 #include <random>
 #include <vector>
 #include <algorithm>
-#include<sstream>
+#include <sstream>
+#include <bits/stdc++.h>
 
 // TODO: Reference additional headers your program requires here.

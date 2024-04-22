@@ -316,17 +316,14 @@ double operation(int N) {
 void Task15() {
 	int size, num;
 	string values;
-	cin >> size >> values;
-	vector<int> array(size);
-	stringstream ss(values);
-	while ( ss >> num ) { 
-    	array.push_back(num);
-    }   
+	// cin >> size;
+	cin >> values;
+	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
+	stringstream ss(values); 
+	vector<int> array;
+	while ( ss >> num )
+  	array.push_back( num );
 	for (auto n : array) {
         cout << n << " ";
-    }  
-
-	
-	
-
+    }
 }
