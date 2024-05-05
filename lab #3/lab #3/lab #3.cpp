@@ -27,8 +27,8 @@ int main()
 	srand(time(NULL));
 
 	int TaskNumber;
-	cout << "Задания 1-6 - лаб. работа 1.\n 7-12 - работа 2.\n 13-18 работа 3.\n";
-	cout << "Введите номер задания(1-18): ";
+	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - работа 2.\n13-18 работа 3.\n" << endl;
+	cout << "Введите номер задания(1-18): " << endl;
 	cin >> TaskNumber;
 	switch (TaskNumber) {
 	case 1: Task01(); break; // lab 1 (3)
@@ -364,25 +364,22 @@ void Task17(){
 }
 
 void Task18() {
-	int size, num;
-	string values;
-	// cin >> size; // нужен ли размер массива если мы используем вектор??
-	cin >> values;
-	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
-	stringstream ss(values);
-	vector<int> array/*(size)*/;
-	while (ss >> num)
-		array.push_back(num);
-	for (int i = 0; i < size - 1; i++) {
-		for (int j = 0; j < size - 1; j++) {
-			if (array[j] > 0) {
-				if (array[j + 1] < 0) {
-					int temp;
-					temp = array[j];
-					array[j] = array[j + 1];
-					array[j + 1] = temp;
-				}
-			}
-		}
+	int n;
+	cout << "Введите кол-во элементов: \n" << endl;
+	cin >> n;
+	vector<int> arr(n);
+	cout << "Задайте массив:" << endl;
+	for (int i = 0; i < n; ++i) {
+		cin >> arr[i];
+	}
+
+	int last = arr[n - 1]; // сохранение последнего элемента. да, костыль, и что?
+	for (int i = n - 1; i > 0; --i) {
+		arr[i] = arr[i - 1]; // сдвиг вправо на один
+	}
+	arr[0] = last; // последний элемент на первую позицию
+
+	for (int i = 0; i < n; ++i) {
+		cout << arr[i] << " ";
 	}
 }
