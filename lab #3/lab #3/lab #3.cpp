@@ -314,6 +314,15 @@ double operation(int N) {
 }
 
 void Task15() {
+	// Ввод данных, который вроде как получился получше
+	/*int n;
+	cout << "text: \n" << endl;
+	cin >> n;
+	vector<int> arr(n);
+	cout << "text:" << endl;
+	for (int i = 0; i < n; ++i) {
+		cin >> arr[i];
+	}*/
 	int size, num;
 	string values;
 	// cin >> size; // нужен ли размер массива если мы используем вектор??
@@ -330,7 +339,17 @@ void Task15() {
 	}
 }
 
-void Task16(){
+void Task16() {
+	// Ввод данных, который вроде как получился получше
+	/*int n;
+	cout << "text: \n" << endl;
+	cin >> n;
+	vector<int> arr(n);
+	cout << "text:" << endl;
+	for (int i = 0; i < n; ++i) {
+		cin >> arr[i];
+	}*/
+
 	int size, num;
 	string values;
 	// cin >> size; // нужен ли размер массива если мы используем вектор??
@@ -345,7 +364,17 @@ void Task16(){
 	} else cout << "Не по возрастанию" << endl;
 }
 
-void Task17(){
+void Task17() {
+	// Ввод данных, который вроде как получился получше
+	/*int n;
+	cout << "text: \n" << endl;
+	cin >> n;
+	vector<int> arr(n);
+	cout << "text:" << endl;
+	for (int i = 0; i < n; ++i) {
+		cin >> arr[i];
+	}*/
+
 	int size, num, min;
 	string values;
 	// cin >> size; // нужен ли размер массива если мы используем вектор??
