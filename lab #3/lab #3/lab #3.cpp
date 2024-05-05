@@ -323,6 +323,7 @@ void Task15() {
 	for (int i = 0; i < n; ++i) {
 		cin >> arr[i];
 	}*/
+
 	int size, num;
 	string values;
 	// cin >> size; // нужен ли размер массива если мы используем вектор??
