@@ -329,24 +329,14 @@ void Task15() {
 
 void Task16() {
 	// Ввод данных, который вроде как получился получше
-	/*int n;
+	int n;
 	cout << "text: \n" << endl;
 	cin >> n;
-	vector<int> arr(n);
+	vector<int> array(n);
 	cout << "text:" << endl;
 	for (int i = 0; i < n; ++i) {
-		cin >> arr[i];
-	}*/
-
-	int size, num;
-	string values;
-	// cin >> size; // нужен ли размер массива если мы используем вектор??
-	cin >> values;
-	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
-	stringstream ss(values); 
-	vector<int> array/*(size)*/;
-	while ( ss >> num )
-  	array.push_back( num );
+		cin >> array[i];
+	}
 	if (is_sorted(array.begin(), array.end()) == true){
 		cout << "По возрастанию" << endl;
 	} else cout << "Не по возрастанию" << endl;
@@ -354,24 +344,14 @@ void Task16() {
 
 void Task17() {
 	// Ввод данных, который вроде как получился получше
-	/*int n;
+	int n;
 	cout << "text: \n" << endl;
 	cin >> n;
-	vector<int> arr(n);
+	vector<int> array(n);
 	cout << "text:" << endl;
 	for (int i = 0; i < n; ++i) {
-		cin >> arr[i];
-	}*/
-
-	int size, num, min;
-	string values;
-	// cin >> size; // нужен ли размер массива если мы используем вектор??
-	cin >> values;
-	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
-	stringstream ss(values); 
-	vector<int> array/*(size)*/;
-	while ( ss >> num )
-  	array.push_back( num );
+		cin >> array[i];
+	
 	for (auto n : array) {
 	if (array[n] > 0){ 
 	
