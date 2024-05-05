@@ -330,10 +330,10 @@ void Task15() {
 void Task16() {
 	// Ввод данных, который вроде как получился получше
 	int n;
-	cout << "text: \n" << endl;
+	cout << "Введите кол-во элементов массива: \n" << endl;
 	cin >> n;
 	vector<int> array(n);
-	cout << "text:" << endl;
+	cout << "Задайте значения элементов:" << endl;
 	for (int i = 0; i < n; ++i) {
 		cin >> array[i];
 	}
@@ -351,13 +351,12 @@ void Task17() {
 	cout << "text:" << endl;
 	for (int i = 0; i < n; ++i) {
 		cin >> array[i];
-	
-	for (auto n : array) {
-	if (array[n] > 0){ 
-	
 	}
-	cout << min << endl;
-}
+	for (auto n : array) {
+		if (array[n] > 0) {
+		}
+		cout << n << endl;
+	}
 }
 
 void Task18() {
