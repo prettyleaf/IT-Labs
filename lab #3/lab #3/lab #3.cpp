@@ -314,29 +314,16 @@ double operation(int N) {
 }
 
 void Task15() {
-	// Ввод данных, который вроде как получился получше
-	/*int n;
-	cout << "text: \n" << endl;
+	int n;
+	cout << "Введите кол-во элементов массива: \n" << endl;
 	cin >> n;
 	vector<int> arr(n);
-	cout << "text:" << endl;
+	cout << "Задайте значения элементов:" << endl;
 	for (int i = 0; i < n; ++i) {
 		cin >> arr[i];
-	}*/
-
-	int size, num;
-	string values;
-	// cin >> size; // нужен ли размер массива если мы используем вектор??
-	cin >> values;
-	getline(cin, values); // тот же самый ввод строки поскольку cin не воспринимает пробелы
-	stringstream ss(values); 
-	vector<int> array/*(size)*/;
-	while ( ss >> num )
-  	array.push_back( num );
-	for (auto n : array) {
-		if (n%2==0){
-        cout << n << " ";
-		}
+	}
+	for (int i = 0; i < n; i += 2) {
+		cout << arr[i] << " ";
 	}
 }
 
@@ -395,7 +382,7 @@ void Task17() {
 
 void Task18() {
 	int n;
-	cout << "Введите кол-во элементов: \n" << endl;
+	cout << "Введите кол-во элементов массмва: \n" << endl;
 	cin >> n;
 	vector<int> arr(n);
 	cout << "Задайте массив:" << endl;
