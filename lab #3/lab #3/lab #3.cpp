@@ -311,7 +311,7 @@ double operation(int N) {
 			return number;
 		}
 	}
-	}
+}
 
 void Task15() {
 	int size, num;
@@ -326,7 +326,7 @@ void Task15() {
 	for (auto n : array) {
 		if (n%2==0){
         cout << n << " ";
-    }
+		}
 	}
 }
 
