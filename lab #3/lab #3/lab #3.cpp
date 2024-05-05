@@ -382,7 +382,7 @@ void Task17() {
 
 void Task18() {
 	int n;
-	cout << "Введите кол-во элементов массмва: \n" << endl;
+	cout << "Введите кол-во элементов массива: \n" << endl;
 	cin >> n;
 	vector<int> arr(n);
 	cout << "Задайте массив:" << endl;
