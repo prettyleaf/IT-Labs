@@ -343,10 +343,10 @@ void Task16() {
 
 void Task17() {
 	int n;
-	cout << "text: \n" << endl;
+	cout << "Введите кол-во элементов массива: \n" << endl;
 	cin >> n;
 	vector<int> array(n);
-	cout << "text:" << endl;
+	cout << "Задайте значения элементов:" << endl;
 	for (int i = 0; i < n; ++i) {
 		cin >> array[i];
 	}
