@@ -350,10 +350,20 @@ void Task17() {
 	for (int i = 0; i < n; ++i) {
 		cin >> array[i];
 	}
-	for (auto n : array) {
-		if (array[n] > 0) {
+
+	int min_positive = INT_MAX; // максимальное значение int как начальное значение
+
+	for (int i = 0; i < n; i++) {
+		if (array[i] > 0 && array[i] < min_positive) {
+			min_positive = array[i]; // если элемент положительный и < минимального положительного, меняем значение на этот элемент
 		}
-		cout << n << endl;
+	}
+
+	if (min_positive == INT_MAX) { // если ни один элемент не был положительным, выведем сообщение
+		cout << "В массиве нету положительных элементов! " << endl;
+	}
+	else {
+		cout << "Наименьший положительный элемент: " << min_positive << endl;
 	}
 }
 
