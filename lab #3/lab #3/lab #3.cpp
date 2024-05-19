@@ -451,6 +451,11 @@ double calcfinalscore(vector<int> scores) {
 	}
 	return sum / scores.size();
 }
+// // // // // // // // // 
+// PROBABLY FIX REQUIRED // 
+// PROBABLY FIX REQUIRED //
+// PROBABLY FIX REQUIRED //
+// // // // // // // // //
 
 void Task21() {
 	vector<int> scores;
