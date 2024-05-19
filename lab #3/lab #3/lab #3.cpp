@@ -20,6 +20,10 @@ void Task15();
 void Task16();
 void Task17();
 void Task18();
+void Task19(); // lab 4 (6)
+void Task20();
+void Task21();
+void Task22();
 
 int main()
 {
@@ -27,7 +31,7 @@ int main()
 	srand(time(NULL));
 
 	int TaskNumber;
-	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - работа 2.\n13-18 работа 3.\n" << endl;
+	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - лаба 2.\n13-18 лаба 3.\n19-25 лаба 4." << endl;
 	cout << "Введите номер задания(1-18): " << endl;
 	cin >> TaskNumber;
 	switch (TaskNumber) {
@@ -49,6 +53,10 @@ int main()
 	case 16: Task16(); break;
 	case 17: Task17(); break;
 	case 18: Task18(); break;
+	case 19: Task19(); break; // lab 4 (6)
+	case 20: Task20(); break;
+	case 21: Task21(); break;
+	case 22: Task22(); break;
 	}
 
 	return 0;
@@ -386,4 +394,98 @@ void Task18() {
 	for (int i = 0; i < n; ++i) {
 		cout << arr[i] << " ";
 	}
+}
+
+bool funcXOR(bool x, bool y) {
+	return x != y;
+}
+
+void Task19() {
+	bool x, y;
+	cout << "Введите значение x: ";
+	cin >> x;
+	cout << "Введите значение y: ";
+	cin >> y;
+	cout << "x XOR y = " << funcXOR(x, y) << endl;
+}
+
+bool vowel(char letter) {
+	letter = tolower(letter); // преобразование в строчную букву
+	switch (letter) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			return true;
+		default:
+			return false;
+	}
+}
+
+void Task20() {
+	char letter;
+	cout << "Введите букву: ";
+	cin >> letter;
+
+	if (vowel(letter)) {
+		cout << letter << " - гласная." << endl;
+	} else {
+		cout << letter << " - не гласная." << endl;
+	}
+}
+
+double calcfinalscore(vector<int> scores) {
+	if (scores.size() < 3) {
+		cout << "Не может быть меньше 3-х оценок.\n";
+		Task21();
+	}
+	sort(scores.begin(), scores.end()); //  сортировка в порядке возростания
+	scores.erase(scores.begin()); // удалить минимальную оценку
+	scores.erase(scores.end() - 1); // удалить максимальную
+	double sum = 0;
+	for (int score : scores) { 
+		// цикл по всем элементам массива numbers, тоже самое что for(int number = 0;number < 5;number++)
+		// спасибо о великие stackoverflow и cyberforum
+		sum += score;
+	}
+	return sum / scores.size();
+}
+
+void Task21() {
+	vector<int> scores;
+	int score;
+	for (int score : scores) {
+		cin >> score;
+		if (score < 0) {
+			cout << "Оценка не может быть отрицательной. пу-пу-пу."; // молю не пиши пу-пу-пу в отчет
+		}
+	}
+	scores.push_back(score);
+
+	double finalscore = calcfinalscore(scores);
+	cout << scores.front() << " и " << scores.back() << " - отброшенные оценки" << endl;
+	cout.precision(2); // количество цифр после запятой
+	cout << fixed << finalscore << endl; // fixed - полученное число после precision
+}
+
+int count_digits(int n) {
+	if (n == 0) {
+		return 1;
+	}
+
+	int count = 0;
+	while (n > 0) {
+		n /= 10;
+		count++;
+	}
+	return count;
+}
+
+void Task22() {
+	int n;
+	cout << "Введите число: ";
+	cin >> n;
+	int digits = count_digits(n);
+	cout << digits << endl;
 }
