@@ -627,7 +627,7 @@ double findMedian(const int* array, int size) {
 }
 
 void Task32() {
-	int c, size32 = 6;
+	/*int c, size32 = 6;
 	int a[size32] { 10, 20, 30, 40, 50, 60, 70, 80 };
 	for (int i = 0; i < size32; ++i) {
 		for (int j = 0; j < size32 - i; ++j) {
@@ -642,5 +642,6 @@ void Task32() {
 		//initial d 
 	}
 
-	cout << findMedian(a, size32) << endl;
+	cout << findMedian(a, size32) << endl;*/
+	cout << "remove" << endl;
 }
