@@ -639,6 +639,7 @@ void Task32() {
 				a[j + 1] = c;
 			}
 		}
+		//initial d 
 	}
 
 	cout << findMedian(a, size32) << endl;
