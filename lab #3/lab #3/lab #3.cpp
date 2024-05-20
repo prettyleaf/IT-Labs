@@ -24,6 +24,13 @@ void Task19(); // lab 4 (6)
 void Task20();
 void Task21();
 void Task22();
+void Task26(); // lab 5 (7)
+void Task27();
+void Task28();
+void Task29();
+void Task30();
+void Task31();
+void Task32();
 
 int main()
 {
@@ -31,7 +38,7 @@ int main()
 	srand(time(NULL));
 
 	int TaskNumber;
-	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - лаба 2.\n13-18 лаба 3.\n19-25 лаба 4." << endl;
+	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - лаба 2.\n13-18 лаба 3.\n19-25 лаба 4.\n26-32 лаба 5." << endl;
 	cout << "Введите номер задания(1-18): " << endl;
 	cin >> TaskNumber;
 	switch (TaskNumber) {
@@ -57,6 +64,13 @@ int main()
 	case 20: Task20(); break;
 	case 21: Task21(); break;
 	case 22: Task22(); break;
+	case 26: Task26(); break; // lab 5 (7)
+	case 27: Task27(); break;
+	case 28: Task28(); break;
+	case 29: Task29(); break;
+	case 30: Task30(); break;
+	case 31: Task31(); break;
+	case 32: Task32(); break;
 	}
 
 	return 0;
@@ -493,4 +507,51 @@ void Task22() {
 	cin >> n;
 	int digits = count_digits(n);
 	cout << digits << endl;
+}
+
+void swap(int& a, int& b) {
+	int c = a;
+	a = b;
+	b = c;
+}
+
+void Task26() {
+	int a = 5;
+	int b = 7;
+	swap(a, b);
+	cout << a << " " << b << endl;
+}
+
+bool containsChar(const char* str, char target)
+{
+	for (; *str; ++str) {
+		if (*str == target) {
+			return true;
+			break;
+		}
+	}
+	return false;
+}
+
+void Task27() {
+	char string[] = "bc";
+	cout << containsChar(string, 'a') << endl;
+}
+
+void reverseString(char* str) {
+	if (str[0] == '\0') {
+		return;
+	}
+	else {
+		reverseString(&str[1]);
+		cout << str[0];
+	}
+}
+
+void Task28() {
+	/*char enteredText;
+	cout << "Введите текст: ";
+	cin >> enteredText;*/
+	char chto[] = "Hello World!";
+	reverseString(chto);
 }
