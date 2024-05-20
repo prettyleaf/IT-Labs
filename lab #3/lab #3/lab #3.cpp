@@ -472,16 +472,16 @@ double calcfinalscore(vector<int> scores) {
 // // // // // // // // //
 
 void Task21() {
+	int n = 5;
 	vector<int> scores;
-	int score;
-	for (int score : scores) {
-		cin >> score;
+	int score = 0;
+	for (int i = 0; i <=n; i++) {
+		cin >> scores.emplace_back();
 		if (score < 0) {
 			cout << "Оценка не может быть отрицательной. пу-пу-пу."; // молю не пиши пу-пу-пу в отчет
 		}
 	}
 	scores.push_back(score);
-
 	double finalscore = calcfinalscore(scores);
 	cout << scores.front() << " и " << scores.back() << " - отброшенные оценки" << endl;
 	cout.precision(2); // количество цифр после запятой
