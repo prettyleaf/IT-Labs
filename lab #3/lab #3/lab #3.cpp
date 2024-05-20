@@ -549,9 +549,97 @@ void reverseString(char* str) {
 }
 
 void Task28() {
-	/*char enteredText;
-	cout << "Введите текст: ";
-	cin >> enteredText;*/
 	char chto[] = "Hello World!";
 	reverseString(chto);
+}
+
+void copyArray(const int* source, int* destination, int size)
+{
+	for (size_t i = 0; i < size; i++) destination[i] = source[i];
+}
+
+void Task29() {
+	int i;
+	int a[6]{ 5, 8, 72, 3, 54, 1 };
+	int b[6]{ 3, 8, 8, 0, 14, 455 };
+	cout << "a[";
+	for (int i = 0; i < 6; i++) cout << a[i] << " ";
+	cout << "]" << endl;
+	cout << "b[";
+	for (int i = 0; i < 6; i++) cout << b[i] << " ";
+	cout << "]" << endl;
+	copyArray(a, b, 6);
+	cout << "a[";
+	for (int i = 0; i < 6; i++) cout << a[i] << " ";
+	cout << "]" << endl;
+	cout << "b[";
+	for (int i = 0; i < 6; i++) cout << b[i] << " ";
+	cout << "]" << endl;
+}
+
+void minMax(const int* array, int size, int& min, int& max)
+{
+	min = 0, max = 0;      // берем за основу первые индексы из массива для мин и макс
+	for (int i = 1; i < size; i++)         // Поиск минимума и максимума
+	{
+		if (array[i] < array[min])
+		{
+			min = i;
+		}
+		if (array[i] > array[max])
+		{
+			max = i;
+		}
+	}
+	cout << "Min = " << array[min] << " Max = " << array[max] << " " << endl;
+}
+
+void Task30() {
+	int min, max;
+	int a[6]{ 5, 8, 72, 3, 54, 1 };
+	minMax(a, 6, min, max);
+}
+
+void countVowels(const char* str)
+{
+	int k = 0;
+	char a[7] = { 'a','e','i','u','y','o','j' };
+	for (; *str; ++str) {
+		for (int h = 0; h < 7; h++) {
+			if (*str == a[h]) {
+				k = k + 1;
+			}
+		}
+	}
+	cout << "glasnih = " << k << endl;
+}
+
+void Task31() {
+	char str[] = "eeeeea";
+	countVowels(str);
+}
+
+double findMedian(const int* array, int size) {
+	//Осталось найти медиану
+	if (size % 2 == 1)
+		return array[size / 2];
+	else return (array[size / 2 + 1] + array[size / 2]) / 2;
+}
+
+void Task32() {
+	int c, size32 = 6;
+	int a[size32] { 10, 20, 30, 40, 50, 60, 70, 80 };
+	for (int i = 0; i < size32; ++i) {
+		for (int j = 0; j < size32 - i; ++j) {
+			if (a[j] > a[j + 1])
+			{
+				// меняем элементы местами
+				c = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = c;
+			}
+		}
+	}
+
+	cout << findMedian(a, size32) << endl;
 }
