@@ -25,6 +25,8 @@ void Task20();
 void Task21();
 void Task22();
 void Task23();
+void Task24();
+void Task25();
 void Task26(); // lab 5 (7)
 void Task27();
 void Task28();
@@ -66,6 +68,8 @@ int main()
 	case 21: Task21(); break;
 	case 22: Task22(); break;
  	case 23: Task23(); break;
+	case 24: Task24(); break;
+	case 25: Task25(); break;
 	case 26: Task26(); break; // lab 5 (7)
 	case 27: Task27(); break;
 	case 28: Task28(); break;
@@ -77,6 +81,7 @@ int main()
 
 	return 0;
 }
+unsigned long long factorial(unsigned int n);
 void Task01()
 {
 	vector<int> R;
@@ -518,13 +523,49 @@ void Task23() {
 		cout << "false" << endl;
 	}
 }
-void Task24(){
 
+
+int factorial(int n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
 }
+
+void Task24() {
+  int n;
+  cout << " Введите число для возведения в факториал: ";
+  cin >> n;
+  int result = factorial(n);
+  cout << "Число " << n << " в степени " << n << " равно "  << result << endl;
+}
+
+
+int fibonacci(int n) {
+    if (n == 1 || n == 2) {
+        return 1;
+    }
+
+    int a = 1, b = 1, c;
+    for (int i = 3; i <= n; ++i) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
+
 
 void Task25(){
-	
+    int N;
+    cin >> N;
+    if (N < 1) {
+        cerr << "Введите натуральное число (N >= 1)." << endl;
+    }
+    cout << fibonacci(N) << endl;
 }
+
 void swap(int& swap1, int& swap2) {
 	int swap_temp = swap1;
 	swap1 = swap2;
@@ -534,7 +575,9 @@ void swap(int& swap1, int& swap2) {
 void Task26() {
 	int swap1, swap2;
 	cout << "Enter value for a: ";
+	cin >> swap1;
 	cout << "Enter value for b: ";
+	cin >> swap2;
 	swap(swap1, swap2);
 	cout << "a = " << swap1 << ", b = " << swap2 << endl;
 }
