@@ -38,8 +38,8 @@ int main()
 	srand(time(NULL));
 
 	int TaskNumber;
-	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - лаба 2.\n13-18 лаба 3.\n19-25 лаба 4.\n26-32 лаба 5." << endl;
-	cout << "Введите номер задания(1-32): " << endl;
+	cout << "Task 1-6 - lab 1.\n7-12 - lab 2.\n13-18 lab 3.\n19-25 lab 4.\n26-32 lab 5." << endl;
+	cout << "Enter task number(1-32): " << endl;
 	cin >> TaskNumber;
 	switch (TaskNumber) {
 	case 1: Task01(); break; // lab 1 (3)
@@ -509,139 +509,188 @@ void Task22() {
 	cout << digits << endl;
 }
 
-void swap(int& a, int& b) {
-	int c = a;
-	a = b;
-	b = c;
+void swap(int& swap1, int& swap2) {
+	int swap_temp = swap1;
+	swap1 = swap2;
+	swap2 = swap_temp;
 }
 
 void Task26() {
-	int a = 5;
-	int b = 7;
-	swap(a, b);
-	cout << a << " " << b << endl;
+	int swap1, swap2;
+	cout << "Enter value for a: ";
+	cout << "Enter value for b: ";
+	swap(swap1, swap2);
+	cout << "a = " << swap1 << ", b = " << swap2 << endl;
 }
 
-bool containsChar(const char* str, char target)
-{
-	for (; *str; ++str) {
-		if (*str == target) {
+bool containsChar(const string& str, char target) {
+	for (char c : str) {
+		if (c == target) {
 			return true;
-			break;
 		}
 	}
 	return false;
 }
 
 void Task27() {
-	char string[] = "bc";
-	cout << containsChar(string, 'a') << endl;
+	string enteredText;
+	char targetChar;
+	cout << "Enter string: ";
+	getline(cin, enteredText);
+	cout << "Enter simbol you want to search: ";
+	cin >> targetChar;
+
+	if (containsChar(enteredText, targetChar)) {
+		cout << "Simbol '" << targetChar << "' was found" << endl;
+	}
+	else {
+		cout << "Simbol '" << targetChar << "' wasnt found" << endl;
+	}
 }
 
 void reverseString(char* str) {
-	if (str[0] == '\0') {
+	// проверка на пустой указатель
+	if (str == nullptr) {
 		return;
 	}
-	else {
-		reverseString(&str[1]);
-		cout << str[0];
+	int length = strlen(str);
+
+	for (int i = 0; i < length / 2; ++i) {
+		swap(str[i], str[length - 1 - i]);
 	}
 }
 
 void Task28() {
-	char chto[] = "Hello World!";
-	reverseString(chto);
+	char str[] = "this code was wrote by github.com/Rockstar234";
+	cout << "Original: " << str << endl;
+
+	reverseString(str);
+	cout << "Reversed: " << str << endl;
 }
 
-void copyArray(const int* source, int* destination, int size)
-{
-	for (size_t i = 0; i < size; i++) destination[i] = source[i];
+void copyArray(const int* source, int* destination, int size) {
+	// снова проверка на пустые указатели
+	if (source == nullptr || destination == nullptr) {
+		return;
+	}
+
+	for (int i = 0; i < size; ++i) {
+		destination[i] = source[i];
+	}
 }
 
 void Task29() {
-	int i;
-	int a[6]{ 5, 8, 72, 3, 54, 1 };
-	int b[6]{ 3, 8, 8, 0, 14, 455 };
-	cout << "a[";
-	for (int i = 0; i < 6; i++) cout << a[i] << " ";
-	cout << "]" << endl;
-	cout << "b[";
-	for (int i = 0; i < 6; i++) cout << b[i] << " ";
-	cout << "]" << endl;
-	copyArray(a, b, 6);
-	cout << "a[";
-	for (int i = 0; i < 6; i++) cout << a[i] << " ";
-	cout << "]" << endl;
-	cout << "b[";
-	for (int i = 0; i < 6; i++) cout << b[i] << " ";
-	cout << "]" << endl;
+	int size;
+	cout << "Enter array size: ";
+	cin >> size;
+
+	int* source = new int[size];
+	int* destination = new int[size];
+	cout << "Enter elements of source array:" << endl;
+	for (int i = 0; i < size; ++i) {
+		cin >> source[i];
+	}
+
+	copyArray(source, destination, size);
+	cout << "Recieved array from source: ";
+	for (int i = 0; i < size; ++i) {
+		cout << destination[i] << " ";
+	}
+	cout << endl;
+	delete[] source;
+	delete[] destination;
 }
 
-void minMax(const int* array, int size, int& min, int& max)
-{
-	min = 0, max = 0;      // берем за основу первые индексы из массива для мин и макс
-	for (int i = 1; i < size; i++)         // Поиск минимума и максимума
-	{
-		if (array[i] < array[min])
-		{
-			min = i;
+void minMax(const int* array, int size, int& min, int& max) {
+	if (size <= 0) {
+		cout << "Array size must be greater than 0" << endl;
+		return;
+	}
+
+	min = numeric_limits<int>::max();
+	max = numeric_limits<int>::min();
+
+	for (int i = 0; i < size; ++i) {
+		if (array[i] < min) {
+			min = array[i];
 		}
-		if (array[i] > array[max])
-		{
-			max = i;
+		if (array[i] > max) {
+			max = array[i];
 		}
 	}
-	cout << "Min = " << array[min] << " Max = " << array[max] << " " << endl;
 }
 
 void Task30() {
+	int size;
+	cout << "Enter the size of the array: ";
+	cin >> size;
+
+	if (size <= 0) {
+		cout << "Array size must be greater than 0" << endl;
+		Task30();
+	}
+
+	int* arr = new int[size];
+	cout << "Enter the elements of the array: ";
+	for (int i = 0; i < size; ++i) {
+		cin >> arr[i];
+	}
+
 	int min, max;
-	int a[6]{ 5, 8, 72, 3, 54, 1 };
-	minMax(a, 6, min, max);
+	minMax(arr, size, min, max);
+	cout << "Minimum: " << min << endl;
+	cout << "Maximum: " << max << endl;
+	delete[] arr;
 }
 
-void countVowels(const char* str)
-{
-	int k = 0;
-	char a[7] = { 'a','e','i','u','y','o','j' };
-	for (; *str; ++str) {
-		for (int h = 0; h < 7; h++) {
-			if (*str == a[h]) {
-				k = k + 1;
-			}
+int countVowels(const char* str) {
+	const char vowels[] = "AEIOUaeiou";
+	int vowelCount = 0;
+
+	for (int i = 0; i < strlen(str); ++i) {
+		if (strchr(vowels, str[i]) != nullptr) {
+			++vowelCount;
 		}
 	}
-	cout << "glasnih = " << k << endl;
+
+	return vowelCount;
 }
 
 void Task31() {
-	char str[] = "eeeeea";
-	countVowels(str);
+	const char* testStr = "this code was wrote by github.com/Rockstar234";
+	cout << "Number of vowels in entered string: " << countVowels(testStr) << endl;
 }
 
 double findMedian(const int* array, int size) {
-	//Осталось найти медиану
-	if (size % 2 == 1)
-		return array[size / 2];
-	else return (array[size / 2 + 1] + array[size / 2]) / 2;
+	vector<int> sortedArray(array, array + size);
+	sort(sortedArray.begin(), sortedArray.end());
+
+	if (size % 2 != 0) {
+		return sortedArray[size / 2];
+	}
+	else {
+		int mid1 = size / 2 - 1;
+		int mid2 = size / 2;
+		return (sortedArray[mid1] + sortedArray[mid2]) / 2.0;
+	}
 }
 
 void Task32() {
-	/*int c, size32 = 6;
-	int a[size32] { 10, 20, 30, 40, 50, 60, 70, 80 };
-	for (int i = 0; i < size32; ++i) {
-		for (int j = 0; j < size32 - i; ++j) {
-			if (a[j] > a[j + 1])
-			{
-				// меняем элементы местами
-				c = a[j];
-				a[j] = a[j + 1];
-				a[j + 1] = c;
-			}
-		}
-		//initial d 
+	int size;
+	cout << "Enter the size of the array: ";
+	cin >> size;
+
+	if (size <= 0) {
+		cout << "Size of array must be greater than 0" << endl;
+		Task32();
 	}
 
-	cout << findMedian(a, size32) << endl;*/
-	cout << "remove" << endl;
+	vector<int> array(size);
+	cout << "Enter the elements of the array: ";
+	for (int i = 0; i < size; ++i) {
+		cin >> array[i];
+	}
+
+	double median = findMedian(array.data(), size);
+	cout << "Median of the array: " << median << endl;
 }
