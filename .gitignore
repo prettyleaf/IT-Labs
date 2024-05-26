@@ -427,3 +427,40 @@ lab #3/.vscode/launch.json
 lab #3/.vscode/tasks.json
 lab #3/.vscode/settings.json
 /lab \#3/.vscode
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/compile_commands.json
+build/Makefile
+build/.cmake/api/v1/query/client-vscode/query.json
+build/.cmake/api/v1/reply/cache-v2-01c16ef8a0eddd003cb8.json
+build/.cmake/api/v1/reply/cmakeFiles-v1-4cef5f43e44cf0d00e72.json
+build/.cmake/api/v1/reply/codemodel-v2-73d5989ecc65745966d3.json
+build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json
+build/.cmake/api/v1/reply/index-2024-05-26T08-13-23-0050.json
+build/.cmake/api/v1/reply/target-CMakeTarget-Debug-e0ac1b23871fb95ba27a.json
+build/.cmake/api/v1/reply/toolchains-v1-d9825e059bbd614ec032.json
+build/CMakeFiles/cmake.check_cache
+build/CMakeFiles/CMakeConfigureLog.yaml
+build/CMakeFiles/CMakeDirectoryInformation.cmake
+build/CMakeFiles/Makefile.cmake
+build/CMakeFiles/Makefile2
+build/CMakeFiles/progress.marks
+build/CMakeFiles/TargetDirectories.txt
+build/CMakeFiles/3.29.3/CMakeCCompiler.cmake
+build/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake
+build/CMakeFiles/3.29.3/CMakeDetermineCompilerABI_C.bin
+build/CMakeFiles/3.29.3/CMakeDetermineCompilerABI_CXX.bin
+build/CMakeFiles/3.29.3/CMakeSystem.cmake
+build/CMakeFiles/3.29.3/CompilerIdC/a.out
+build/CMakeFiles/3.29.3/CompilerIdC/CMakeCCompilerId.c
+build/CMakeFiles/3.29.3/CompilerIdCXX/a.out
+build/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+build/CMakeFiles/CMakeTarget.dir/build.make
+build/CMakeFiles/CMakeTarget.dir/cmake_clean.cmake
+build/CMakeFiles/CMakeTarget.dir/compiler_depend.make
+build/CMakeFiles/CMakeTarget.dir/compiler_depend.ts
+build/CMakeFiles/CMakeTarget.dir/depend.make
+build/CMakeFiles/CMakeTarget.dir/DependInfo.cmake
+build/CMakeFiles/CMakeTarget.dir/flags.make
+build/CMakeFiles/CMakeTarget.dir/link.txt
+build/CMakeFiles/CMakeTarget.dir/progress.make
