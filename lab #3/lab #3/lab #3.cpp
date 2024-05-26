@@ -24,6 +24,7 @@ void Task19(); // lab 4 (6)
 void Task20();
 void Task21();
 void Task22();
+void Task23();
 void Task26(); // lab 5 (7)
 void Task27();
 void Task28();
@@ -64,6 +65,7 @@ int main()
 	case 20: Task20(); break;
 	case 21: Task21(); break;
 	case 22: Task22(); break;
+ case 23: Task23(); break;
 	case 26: Task26(); break; // lab 5 (7)
 	case 27: Task27(); break;
 	case 28: Task28(); break;
