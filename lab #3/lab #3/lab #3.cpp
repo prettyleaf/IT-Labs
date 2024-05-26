@@ -509,6 +509,33 @@ void Task22() {
 	cout << digits << endl;
 }
 
+bool isPalindrome(const string& str) {
+	int left = 0;
+	int right = str.length() - 1;
+
+	while (left < right) {
+		if (str[left] != str[right]) {
+			return false;
+		}
+		left++;
+		right--;
+	}
+	return true;
+}
+
+void Task23() {
+	string number;
+	cout << "Enter number: " << endl;
+	cin >> number;
+
+	if (isPalindrome(number)) {
+		cout << "true" << endl;
+	}
+	else {
+		cout << "false" << endl;
+	}
+}
+
 void swap(int& swap1, int& swap2) {
 	int swap_temp = swap1;
 	swap1 = swap2;
