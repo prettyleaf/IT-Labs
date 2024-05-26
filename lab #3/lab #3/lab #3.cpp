@@ -673,7 +673,7 @@ void Task30() {
 }
 
 int countVowels(const char* str) {
-	const char vowels[] = "AEIOUaeiou";
+	const char vowels[] = "AEIOUYaeiouy";
 	int vowelCount = 0;
 
 	for (int i = 0; i < strlen(str); ++i) {
