@@ -1,4 +1,4 @@
-﻿#include "lab #3.h"
+#include "lab #3.h"
 
 using namespace std;
 
@@ -39,7 +39,7 @@ int main()
 
 	int TaskNumber;
 	cout << "Задания 1-6 - лаб. работа 1.\n7-12 - лаба 2.\n13-18 лаба 3.\n19-25 лаба 4.\n26-32 лаба 5." << endl;
-	cout << "Введите номер задания(1-18): " << endl;
+	cout << "Введите номер задания(1-32): " << endl;
 	cin >> TaskNumber;
 	switch (TaskNumber) {
 	case 1: Task01(); break; // lab 1 (3)
@@ -627,7 +627,7 @@ double findMedian(const int* array, int size) {
 }
 
 void Task32() {
-	int c, size32 = 6;
+	/*int c, size32 = 6;
 	int a[size32] { 10, 20, 30, 40, 50, 60, 70, 80 };
 	for (int i = 0; i < size32; ++i) {
 		for (int j = 0; j < size32 - i; ++j) {
@@ -639,7 +639,9 @@ void Task32() {
 				a[j + 1] = c;
 			}
 		}
+		//initial d 
 	}
 
-	cout << findMedian(a, size32) << endl;
+	cout << findMedian(a, size32) << endl;*/
+	cout << "remove" << endl;
 }
