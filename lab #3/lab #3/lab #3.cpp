@@ -451,44 +451,25 @@ void Task20() {
 	}
 }
 
-double calcfinalscore(vector<int> scores) {
-	if (scores.size() < 3) {
-		cout << "Не может быть меньше 3-х оценок.\n";
-		Task21();
-	}
-	sort(scores.begin(), scores.end()); //  сортировка в порядке возростания
-	scores.erase(scores.begin()); // удалить минимальную оценку
-	scores.erase(scores.end() - 1); // удалить максимальную
-	double sum = 0;
-	for (int score : scores) { 
-		// цикл по всем элементам массива numbers, тоже самое что for(int number = 0;number < 5;number++)
-		// спасибо о великие stackoverflow и cyberforum
-		sum += score;
-	}
-	return sum / scores.size();
+double finalScore(vector<int> scores) {
+    sort(scores.begin(), scores.end());
+    int min_score = scores.front();
+    int max_score = scores.back();
+    double average_score = (scores[1] + scores[2] + scores[3]) / 3.0;
+    cout << "Откинутые числа: " << min_score << " " << max_score << endl;
+    cout << fixed << setprecision(2) << "Итоговая оценка: " << average_score << endl;
+    return average_score;
 }
-// // // // // // // // // 
-// PROBABLY FIX REQUIRED // 
-// PROBABLY FIX REQUIRED //
-// PROBABLY FIX REQUIRED //
-// // // // // // // // //
 
 void Task21() {
-	int n = 5;
-	vector<int> scores;
-	int score = 0;
-	for (int i = 0; i <=n; i++) {
-		cin >> scores.emplace_back();
-		if (score < 0) {
-			cout << "Оценка не может быть отрицательной. пу-пу-пу."; // молю не пиши пу-пу-пу в отчет
-		}
-	}
-	scores.push_back(score);
-	double finalscore = calcfinalscore(scores);
-	cout << scores.front() << " и " << scores.back() << " - отброшенные оценки" << endl;
-	cout.precision(2); // количество цифр после запятой
-	cout << fixed << finalscore << endl; // fixed - полученное число после precision
+    vector<int> scores(5);
+	cout << "Введите 5 чисел через пробел: " << endl;
+    for (int i = 0; i < 5; ++i) {
+        cin >> scores[i];
+    }
+    finalScore(scores);
 }
+
 
 int count_digits(int n) {
 	if (n == 0) {
@@ -537,7 +518,13 @@ void Task23() {
 		cout << "false" << endl;
 	}
 }
+void Task24(){
 
+}
+
+void Task25(){
+	
+}
 void swap(int& swap1, int& swap2) {
 	int swap_temp = swap1;
 	swap1 = swap2;
