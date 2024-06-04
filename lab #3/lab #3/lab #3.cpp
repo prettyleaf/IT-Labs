@@ -423,7 +423,7 @@ bool funcXOR(bool x, bool y) {
 
 void Task19() {
 	bool x, y;
-	cout << "Введите значение x: ";
+	cout << "Введите значение x (1 = true, 0 = false): ";
 	cin >> x;
 	cout << "Введите значение y: ";
 	cin >> y;
@@ -438,6 +438,7 @@ bool vowel(char letter) {
 		case 'i':
 		case 'o':
 		case 'u':
+		case 'y':
 			return true;
 		default:
 			return false;
@@ -595,7 +596,7 @@ void Task27() {
 	string enteredText;
 	char targetChar;
 	cout << "Enter string: ";
-	getline(cin, enteredText);
+	cin >> enteredText;
 	cout << "Enter simbol you want to search: ";
 	cin >> targetChar;
 
