@@ -560,6 +560,7 @@ int fibonacci(int n) {
 
 void Task25(){
     int N;
+	cout << "Введите число: ";
     cin >> N;
     if (N < 1) {
         cerr << "Введите натуральное число (N >= 1)." << endl;
@@ -575,9 +576,9 @@ void swap(int& swap1, int& swap2) {
 
 void Task26() {
 	int swap1, swap2;
-	cout << "Enter value for a: ";
+	cout << "Введите a: ";
 	cin >> swap1;
-	cout << "Enter value for b: ";
+	cout << "Введите b: ";
 	cin >> swap2;
 	swap(swap1, swap2);
 	cout << "a = " << swap1 << ", b = " << swap2 << endl;
@@ -593,18 +594,19 @@ bool containsChar(const string& str, char target) {
 }
 
 void Task27() {
+	cin.ignore();
 	string enteredText;
 	char targetChar;
 	cout << "Enter string: ";
-	cin >> enteredText;
+	getline(cin, enteredText);
 	cout << "Enter simbol you want to search: ";
 	cin >> targetChar;
 
 	if (containsChar(enteredText, targetChar)) {
-		cout << "Simbol '" << targetChar << "' was found" << endl;
+		cout << "Символ '" << targetChar << "' был найден" << endl;
 	}
 	else {
-		cout << "Simbol '" << targetChar << "' wasnt found" << endl;
+		cout << "Символ '" << targetChar << "' не был найден" << endl;
 	}
 }
 
@@ -622,10 +624,10 @@ void reverseString(char* str) {
 
 void Task28() {
 	char str[] = "this code was wrote by github.com/Rockstar234";
-	cout << "Original: " << str << endl;
+	cout << "Оригинал: " << str << endl;
 
 	reverseString(str);
-	cout << "Reversed: " << str << endl;
+	cout << "Задом-наперед: " << str << endl;
 }
 
 void copyArray(const int* source, int* destination, int size) {
@@ -641,18 +643,18 @@ void copyArray(const int* source, int* destination, int size) {
 
 void Task29() {
 	int size;
-	cout << "Enter array size: ";
+	cout << "Введите размер массива: ";
 	cin >> size;
 
 	int* source = new int[size];
 	int* destination = new int[size];
-	cout << "Enter elements of source array:" << endl;
+	cout << "Введите элементы исходного массива :" << endl;
 	for (int i = 0; i < size; ++i) {
 		cin >> source[i];
 	}
 
 	copyArray(source, destination, size);
-	cout << "Recieved array from source: ";
+	cout << "Массив, полученный из исходного: ";
 	for (int i = 0; i < size; ++i) {
 		cout << destination[i] << " ";
 	}
@@ -663,7 +665,7 @@ void Task29() {
 
 void minMax(const int* array, int size, int& min, int& max) {
 	if (size <= 0) {
-		cout << "Array size must be greater than 0" << endl;
+		cout << "Размер массива должен быть больше чем 0!" << endl;
 		return;
 	}
 
@@ -682,24 +684,24 @@ void minMax(const int* array, int size, int& min, int& max) {
 
 void Task30() {
 	int size;
-	cout << "Enter the size of the array: ";
+	cout << "Введите размер массива: ";
 	cin >> size;
 
 	if (size <= 0) {
-		cout << "Array size must be greater than 0" << endl;
+		cout << "Размер массива должен быть больше чем 0!" << endl;
 		Task30();
 	}
 
 	int* arr = new int[size];
-	cout << "Enter the elements of the array: ";
+	cout << "Введите элементы массива: ";
 	for (int i = 0; i < size; ++i) {
 		cin >> arr[i];
 	}
 
 	int min, max;
 	minMax(arr, size, min, max);
-	cout << "Minimum: " << min << endl;
-	cout << "Maximum: " << max << endl;
+	cout << "Минимум: " << min << endl;
+	cout << "Максимум: " << max << endl;
 	delete[] arr;
 }
 
@@ -718,7 +720,7 @@ int countVowels(const char* str) {
 
 void Task31() {
 	const char* testStr = "this code was wrote by github.com/Rockstar234";
-	cout << "Number of vowels in entered string: " << countVowels(testStr) << endl;
+	cout << "Исходная строка: " << testStr <<  "\nСчётчик гласных: " << countVowels(testStr) << endl;
 }
 
 double findMedian(const int* array, int size) {
@@ -737,20 +739,20 @@ double findMedian(const int* array, int size) {
 
 void Task32() {
 	int size;
-	cout << "Enter the size of the array: ";
+	cout << "Введите размер массива: ";
 	cin >> size;
 
 	if (size <= 0) {
-		cout << "Size of array must be greater than 0" << endl;
+		cout << "Размер массива должен быть больше чем 0!" << endl;
 		Task32();
 	}
 
 	vector<int> array(size);
-	cout << "Enter the elements of the array: ";
+	cout << "Введите элементы массива: ";
 	for (int i = 0; i < size; ++i) {
 		cin >> array[i];
 	}
 
 	double median = findMedian(array.data(), size);
-	cout << "Median of the array: " << median << endl;
+	cout << "Медиана массива: " << median << endl;
 }
