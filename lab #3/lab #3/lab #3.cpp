@@ -37,7 +37,7 @@ void Task32();
 
 int main()
 {
-	setlocale(LC_ALL, "ru");
+	setlocale(LC_ALL, "ru.UTF-8");
 	srand(time(NULL));
 
 	int TaskNumber;
