@@ -1,4 +1,8 @@
-# IT-Labs is a repo with solutions we work on classes.
+<div><p align="center">
+  <img alt="IT-Labs repo stats" src="https://repobeats.axiom.co/api/embed/68f1027a1edef36efe0a009f63b5f55339be458b.svg">
+</p></div>
+
+## IT-Labs is a repo with solutions we work on classes.
 ### Main working group:
 - Vadim ["doritorainn"](https://github.com/doritorainn) Grinko
 - Ivan ["Rockstar234"](https://github.com/Rockstar234) Kolesnikov *(repo creator)*
